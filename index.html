@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css" type="text/css">
+    <title>Initial copy(no personalization)</title>
+</head>
+<body>
+    <div class="game-container"></div>
+        <div class="player-info">
+            <div>
+                <label for="player-name">Your name</label>
+                <input id="player-name" maxlength="10" type="text" />
+            </div>
+            <div>
+                <button id="player-color">Change Color</button>
+            </div>
+        </div>
+
+
+
+
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+        <script>
+            const firebaseConfig = {
+            apiKey: "AIzaSyBbehx-mQFwmEGe9ZAncYVYE4fgbtpQDHM",
+            authDomain: "mptg-3831c.firebaseapp.com",
+            projectId: "mptg-3831c",
+            storageBucket: "mptg-3831c.appspot.com",
+            messagingSenderId: "287566740632",
+            appId: "1:287566740632:web:23c49f2efd63a4b840e4ed",
+            databaseURL: "https://mptg-3831c-default-rtdb.europe-west1.firebasedatabase.app"
+            };
+            firebase.initializeApp(firebaseConfig)
+        </script>
+
+    <script src="/KeyPressListener.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>
